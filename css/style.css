@@ -10,3 +10,40 @@
 	font-size: 1.4em;
 	font-weight: 400;
 }
+
+.primary-header{
+	position: absolute;
+	margin-top: 4em;
+	width: 100%;
+	text-align: center;
+}
+
+.primary-header .primary-greeting{
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+
+.primary-header .primary-intro{
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.primary-header .primary-image{
+	width: 260px;
+	height: 260px;
+	background: lime;
+	border-radius: 130px;
+	-moz-border-radius: 130px;
+	-webkit-border-radius: 130px;
+	margin: 0 auto;
+	margin-top: 2em;
+	border: 10px solid #55595c;
+	background-image: url('../images/primary.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
