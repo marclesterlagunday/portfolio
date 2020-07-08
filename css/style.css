@@ -35,7 +35,6 @@
 .primary-header .primary-image{
 	width: 260px;
 	height: 260px;
-	background: lime;
 	border-radius: 130px;
 	-moz-border-radius: 130px;
 	-webkit-border-radius: 130px;
@@ -46,4 +45,8 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.visibility-hidden{
+	visibility: hidden;
 }
