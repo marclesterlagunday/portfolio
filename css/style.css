@@ -1,3 +1,8 @@
+body, html{
+	height: 100%;
+	margin: 0;
+}
+
 .navbar{
 	padding: 0.3em 2em;
 }
@@ -49,4 +54,20 @@
 
 .visibility-hidden{
 	visibility: hidden;
+}
+
+#home{
+	background-color: #fff;
+}
+
+.about{
+	margin-top: 100vh;
+	background-image: url('../images/negative-space.jpg');
+	min-height: 100%;
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }

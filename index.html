@@ -6,6 +6,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#f68620">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#f68620">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f68620">
 
 	<title>Marc Lester Lagunday</title>
 
@@ -23,7 +29,7 @@
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<a class="navbar-brand" href="#">
 			<img class="navbar-logo" src="images/mllogo-black.png">
 		</a>
@@ -53,13 +59,17 @@
 	</nav>
 
 	<!-- Home -->
-	<section id="#home">
+	<div id="#home" class="row">
 		<div class="primary-header">
 			<p class="primary-greeting visibility-hidden">Hi I'm Lester!</p>
 			<p class="primary-intro visibility-hidden">Creating a website is my art. Designing and Coding is my hobby.</p>
 			<div class="primary-image visibility-hidden"></div>
 		</div>
-	</section>
+	</div>
+
+	<div class="about row parallax-effect">
+		
+	</div>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
