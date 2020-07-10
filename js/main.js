@@ -20,6 +20,8 @@ $(document).ready(function(){
 function responsive_css(){
 	let primary_header_margin_top = $(".primary-header").css('margin-top').replace(/[^0-9]/g,'');
 	let navbar_height = $("nav").height();
+	let new_primary_header_margin_top = parseInt(primary_header_margin_top) + parseInt(navbar_height);
 
-	$(".primary-header").css('margin-top',  (parseInt(primary_header_margin_top) + parseInt(navbar_height)) + "px");
+	$(".primary-header").css('margin-top',  new_primary_header_margin_top + "px");
+	$(".primary-header").css('height',  "calc(100vh - "+new_primary_header_margin_top+"px)");
 }
