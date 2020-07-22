@@ -1,33 +1,17 @@
-$(document).ready(function(){
-	setTimeout(function(){
-		$(".primary-greeting")
-		.removeClass('visibility-hidden')
-		.addClass('animate__animated animate__fadeInDown');
-	}, 600);
-	setTimeout(function(){
-		$(".primary-intro")
-		.removeClass('visibility-hidden')
-		.addClass('animate__animated animate__fadeInUp');
-	}, 1200);
-	setTimeout(function(){
-		$(".primary-image")
-		.removeClass('visibility-hidden')
-		.addClass('animate__animated animate__flipInY');
-	}, 1800);
-	responsive_css();
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
 });
+*/
 
-function responsive_css(){
-	let primary_header_margin_top = $(".primary-header").css('margin-top').replace(/[^0-9]/g,'');
-	let navbar_height = $("nav").height();
-	let new_primary_header_margin_top = parseInt(primary_header_margin_top) + parseInt(navbar_height);
+/* Otherwise just put the config content (json): */
 
-	$(".primary-header").css('margin-top',  new_primary_header_margin_top + "px");
-	$(".primary-header").css('height',  "calc(100vh - "+new_primary_header_margin_top+"px)");
-	$(".about").css('height',  "calc(100vh - "+navbar_height+"px)");
-}
-
-particlesJS('experience',
+particlesJS('particles-js',
   
   {
     "particles": {
@@ -39,7 +23,7 @@ particlesJS('experience',
         }
       },
       "color": {
-        "value": "#000000"
+        "value": "#ffffff"
       },
       "shape": {
         "type": "circle",
@@ -79,7 +63,7 @@ particlesJS('experience',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#000000",
+        "color": "#ffffff",
         "opacity": 0.4,
         "width": 1
       },
@@ -98,7 +82,7 @@ particlesJS('experience',
       }
     },
     "interactivity": {
-      "detect_on": "window",
+      "detect_on": "canvas",
       "events": {
         "onhover": {
           "enable": true,

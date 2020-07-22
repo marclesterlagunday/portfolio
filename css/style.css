@@ -44,7 +44,7 @@ body, html{
 	-moz-border-radius: 130px;
 	-webkit-border-radius: 130px;
 	margin: 0 auto;
-	margin-top: 2em;
+	margin-top: 4em;
 	border: 10px solid #55595c;
 	background-image: url('../images/primary.jpg');
 	background-position: center;
@@ -67,7 +67,23 @@ body, html{
 
 .about{
 	background-image: url('../images/negative-space.jpg');
-	min-height: 100%;
+}
+
+.about-content{
+	margin-top: 7em;
+	position: absolute;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.about-header{
+	font-size: 26px;
+	color: #000;
+	font-weight: 600;
+}
+
+.about-description{
+	font-size: 20px;
 }
 
 .section{
@@ -78,4 +94,41 @@ body, html{
 .section-light{
 	background-color: #f4f4f4;
 	color: #666;
+}
+
+#experience{
+	position: relative;
+}
+
+#experience-content{
+	width: 100%;
+	position: absolute;
+	margin-top: 10em;
+}
+
+#experience-content .card{
+	margin: 0 auto;
+}
+
+#experience .experience-title{
+	letter-spacing: 20px;
+	margin-bottom: 80px;
+}
+
+#experience .card-header{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.row{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+.card-body ul li{
+	margin-bottom: 7px;
+}
+
+.exp-logo{
+	width: 100px;
 }
