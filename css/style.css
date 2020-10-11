@@ -131,4 +131,9 @@ body, html{
 
 .exp-logo{
 	width: 100px;
+	display: inline-block;
+}
+
+.company{
+	display: inline-block;
 }
